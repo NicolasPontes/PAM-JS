@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./Ex-04.js"></script>
+        <title>Ex 04</title>
+    </head>
+    <body>
+        <h1>Onmouseover: </h1>
+        <!-- Selecionando e atribuindo evento onmouseover -->
+        <div onmouseover="Botao()">
+            <button id="bo">Passe o mouse Aqui!</button>
+        </div>
+        <hr>
+        <h1>Onfocus: </h1>
+        <!-- Selecionando e atribuindo evento onfocus -->
+        <label>Clique no input</label>
+        <input type="text" onfocus="Foco()" id="Dados">
+        <hr>
+        <h1>Onchange: </h1>
+        <!-- Selecionando e atribuindo evento onchange -->
+        <p>Selecione uma série:</p>
+        <select onchange="Mudar()" id="Myselect">
+            <option value="The Bear">The Bear</option>
+            <option value="Peaky Blinders">Peaky Blinders</option>
+            <option value="Breaking Bad">Breaking Bad</option>
+        </select>
+        <p id="texto"></p>
+        <hr>
+        <h1>onclick</h1>
+        <label>Clique Abaixo: </label><p>
+        <input type="button" value="Clique" onclick="showAlert()"></p>
+    </body>
+    </html>

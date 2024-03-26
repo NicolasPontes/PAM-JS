@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exercício 03</title>
+    </head>
+    <body>
+    <h1>Exercício 03</h1>
+    <hr>
+    <p></p>
+    <p id="identificador">Teste de ID</p>
+    <p>Teste de Tag Name</p>
+    <p class="classificacao">Teste de Classe</p>
+    <p class="classificacao">Teste de Classe Query Selector</p>
+    <script>
+        //By ID
+        var identificador = document.getElementById('identificador')
+        identificador.style.color = "#836FFF"
+        //By Tag Name
+        var TagName = document.getElementsByTagName('p')[2]
+        TagName.style.color = "#7FFFD4"
+        //By Class Name
+        var classificador = document.getElementsByClassName('classificacao')[0]
+        classificador.style.color = "#32CD32"
+        //By querySelector
+        document.querySelector('p').innerHTML = "Adicionado via JS"
+        //By querySelector All
+        var classificadorAll = document.querySelectorAll('.classificacao')[1]
+        classificadorAll.style.color = "#7CFC00" 
+    </script> 
+    </body>
+</html>
